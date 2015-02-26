@@ -1,7 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+
+.about, .upcoming, .signup{
+  text-align: center;
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -50,6 +55,10 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  color: white;
+  text-shadow: 0 0 5px black;
+  background-image: url(http://s2.mt-cdn.net/_img/webhosting/vps/developer/hero-lg.jpg);
+  background-size: cover;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   .btn {
