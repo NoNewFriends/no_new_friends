@@ -19,6 +19,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 100%;
+  font-family: "Merriweather",serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -28,7 +30,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+hr.h1{
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -41,7 +46,11 @@ body {
     padding-bottom: 19px;
   }
 }
-
+.social{
+  img{
+    width: 40px;
+  }
+}
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -57,13 +66,41 @@ body {
 .jumbotron {
   color: white;
   text-shadow: 0 0 5px black;
-  background-image: url(http://s2.mt-cdn.net/_img/webhosting/vps/developer/hero-lg.jpg);
+  background-image: url(/images/musicexchange.jpg);
   background-size: cover;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  padding: 25px;
+  #logo{
+    width: 250px;
+  }
   .btn {
     font-size: 21px;
     padding: 14px 24px;
+  }
+}
+h1{
+  margin-top: 40px;
+  color: #555;
+  background-color: white;
+  padding: 0 10px;
+  display: inline-block;
+}
+.about{
+  font-size: 2rem;
+}
+.event{
+  .title{
+    font-weight: bold;
+  }
+  .date, .location{
+    display: inline-block;
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+  .description{
+    margin-top: 2rem;
+    font-size: 2rem;
   }
 }
 
@@ -75,10 +112,15 @@ body {
   }
 }
 
+.footer{
+  border: none !important;
+  margin-top: 50px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 800px;
   }
 
   /* Remove the padding we set earlier */

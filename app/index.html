@@ -17,6 +17,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
   </head>
   <body>
@@ -25,44 +26,70 @@
     <![endif]-->
 
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted"><!-- N.O. New Friends --> &nbsp;</h3>
-      </div>
+    <!-- <div class="container"> -->
+    <!--   <div class="header"> -->
+    <!--     <ul class="nav nav&#45;pills pull&#45;right"> -->
+    <!--       <li class="active"><a href="#">Home</a></li> -->
+    <!--       <li><a href="#">About</a></li> -->
+    <!--       <li><a href="#">Contact</a></li> -->
+    <!--     </ul> -->
+    <!--     <h3 class="text&#45;muted"><!&#45;&#45; N.O. New Friends &#45;&#45;> &#38;nbsp;</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
 
       <div class="jumbotron">
-        <h1>N.O. New Friends</h1>
-        <p class="lead">Meet new people goddamnit.</p>
+        <!-- <h1>N.O. New Friends</h1> -->
+        <img id="logo" src="/images/logo.png">
+        <p class="lead">A New Orleans-based collective of social gatherings.</p>
       </div>
 
-      <div class="row upcoming">
+    <div class="container">
+      <div class="row about">
         <div>
-          <h1>Upcoming</h1>
-          <hr>
+          <!-- <h1>About</h1> -->
+          From music shares to backyard dinners to capture the flag, N.O. New Friends designs creative events and spaces to interconnect the city’s residents.
+          <br>
+          <a href="https://www.facebook.com/neworleansnewfriends?ref=bookmarks" class="social"><img src="/images/facebook.png"></a>
+          <a href="https://twitter.com/NOLANewFriends" class="social"><img src="/images/twitter.png"></a>
         </div>
       </div>
-
       <div class="row signup">
         <div>
-          <h1>get notified of new events:</h1>
+          <h1>Jump on our Mailing List</h1>
+          <hr class="h1">
           <form class="form form-inline">
             <input type="text" class="input-small" placeholder="Email Address">
             <button class="btn" type="submit">Signup</button>
           </form>
-          <hr>
         </div>
       </div>
 
-      <div class="row about">
+
+      <div class="row upcoming">
         <div>
-          <h1>About</h1>
-          <hr>
+          <h1>Upcoming Events</h1>
+          <hr class="h1">
+          <div class="event">
+            <h2 class="title">Singles Only</h2>
+            <div class="date">7pm, April 4th, 2015 @ </div>
+            <div class="location">Handsome Willy's</div>
+            <div class="description">
+              Looking for a date? Want to expand your circle of friends? Let Handsome Willy's and the matchmakers who brought you the Hump Connection help!
+              <br><br>
+We believe there’s more to people than their Facebook pics. NO New Friends will be a program dedicated to good music, live conversation, and perhaps actually connecting a heart or two…
+            </div>
+          </div>
         </div>
+        <div class="event">
+            <h2 class="title">Backyard Popsicles</h2>
+            <div class="date">3pm, April 4th, 2015 @ </div>
+            <div class="location">TBA</div>
+            <div class="description">
+              No better way to embrace the dog days of summer then kicking back with good friends, good music, and some damn good popsicles.
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="footer">

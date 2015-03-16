@@ -401,6 +401,16 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+    buildcontrol: {
+      dist: {
+        options: {
+          remote: 'https://github.com/NoNewFriends/no_new_friends',
+          branch: 'gh-pages',
+          commit: true,
+          push: true
+        }
+      }
     }
   });
 
@@ -463,5 +473,9 @@ module.exports = function (grunt) {
     'newer:jshint',
     'test',
     'build'
+  ]);
+  grunt.registerTask('deploy', [
+    'build',
+    'buildcontrol'
   ]);
 };
