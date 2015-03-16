@@ -62,6 +62,9 @@ hr.h1{
   margin: 30px 0;
 }
 
+label{
+  font-size: 1rem;
+}
 /* Main marketing message and sign up button */
 .jumbotron {
   color: white;
@@ -117,6 +120,9 @@ h1{
   margin-top: 50px;
 }
 
+.response{
+  font-size: 2rem;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
