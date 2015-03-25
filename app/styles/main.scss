@@ -4,7 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 
-.about, .upcoming, .signup{
+.about, .upcoming, .signup, .family{
   text-align: center;
 }
 
@@ -131,6 +131,12 @@ h1{
 
 .response{
   font-size: 2rem;
+}
+
+.family{
+  img{
+    width: 225px;
+  }
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
