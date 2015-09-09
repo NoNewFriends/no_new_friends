@@ -5,11 +5,18 @@
     <title>N.O. New Friends</title>
     <meta name="description" content="Making New Frinds in New Orleans.">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="/b99cb137.favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <link rel="stylesheet" href="styles/4e076612.main.css">
-    <script src="scripts/vendor/fbe20327.modernizr.js"></script>
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
     <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" /> -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
 
@@ -33,7 +40,7 @@
 
       <div class="jumbotron">
         <!-- <h1>N.O. New Friends</h1> -->
-        <img id="logo" src="images/2073a269.logo.png">
+        <img id="logo" src="images/logo.png">
         <p class="lead">A New Orleans based collective of social gatherings.</p>
       </div>
 
@@ -44,8 +51,8 @@
            NO New Friends designs creative events and spaces to interconnect adventurous New Orleanians.
            From music shares to backyard dinners to capture the flag, checkout the list of upcoming events below.
           <br>
-          <a href="https://www.facebook.com/neworleansnewfriends?ref=bookmarks" class="social"><img src="images/43ef2099.facebook.png"></a>
-          <a href="https://twitter.com/NOLANewFriends" class="social"><img src="images/76138a90.twitter.png"></a>
+          <a href="https://www.facebook.com/neworleansnewfriends?ref=bookmarks" class="social"><img src="images/facebook.png"></a>
+          <a href="https://twitter.com/NOLANewFriends" class="social"><img src="images/twitter.png"></a>
         </div>
       </div>
       <div class="row signup">
@@ -82,20 +89,36 @@
         <div>
           <h1>Upcoming Events</h1>
           <hr class="h1">
-      
+        <!-- BEGIN EVENT -->
+        <div class="event">
+            <h2 class="title">Sample Sundays - Popsicle Edition</h2>
+            <div class="date">3pm - 5pm Sunday, April 26th @ </div>
+            <div class="location">
+              the Backyard of 2642 Bayou Road
+            </div>
+            <div class="description">
+              <p>
+                In the backyard, on the front stoop, or in the middle of the neutral ground, Sample Sundays will be celebrations of our two favorite things-  music and eats. Listen to DJ Backdrop and DJ CAX bump jams in that Sunday shine while savoring your favorite throwback snack and of course, making new friends.
+              </p>
+              <p>
+                For our first edition, we will be poppin’ popsicles. No better way to embrace the dog days of summer then kicking back with good people, good music, and some damn good popsicles. Music starts at 3pm.
+              </p>
+            </div>
+        </div>
+        <!-- END EVENT -->
           <!-- BEGIN EVENT -->
           <div class="event">
             <h2 class="title">NO New Friends Round Up</h2>
-            <div class="date">7:30pm, May 16th, 2015 @ </div>
+            <div class="date">7:30, Friday September 19th 2015 @ </div>
             <div class="location">
               <a href="http://www.handsomewillys.com">Handsome Willy's</a>
             </div>
             <div class="description">
               <p>
-                Want to expand your circle of friends? Looking for a date? Let No New Friends and the fine people at Handsome Willy's help!
+                Want to expand your circle of friends? Looking for a date? Let No New Friends and the fine people at Handsome Willy's help! .Part music trivia, a little double dare, some speed dating, and part plain ol' good time, NO New Friends promises a positive and creative space for people from all over New Orleans to connect. 
               </p>
               <p>
-                We believe there’s more to people than their Tinder pics. Our Round Up will be dedicated to good music, live conversation, and perhaps actually connecting a heart or two… Music and program starts at 7:30pm. You won't want to be late!
+                We believe there’s more to people than their Facebook profiles or their Tinder pics. NO New Friends will be a night dedicated to good music, live conversation, and perhaps actually connecting a heart or two… Music starts at 7:00 pm and program at 7:30pm sharp. You won't want to be late!
               </p>
             </div>
           </div>
@@ -104,7 +127,7 @@
         <div class="row family">
           <h1>Extended Family</h1>
           <hr class="h1">
-          <a href="http://www.handsomewillys.com"><img src="images/d0bc4068.handsome-logo.jpg"></a>
+          <a href="http://www.handsomewillys.com"><img src="images/handsome-logo.jpg"></a>
         </div>
       </div>
 
@@ -116,7 +139,23 @@
     </div>
 
 
-    <script src="scripts/5987e2ba.vendor.js"></script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -128,6 +167,8 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <script src="scripts/3431b5a9.main.js"></script>
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
